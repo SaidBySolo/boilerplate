@@ -1,12 +1,11 @@
 {
     "python.analysis.typeCheckingMode": "strict",
-    "python.formatting.provider": "black",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
-    "python.sortImports.path": "",
-    "python.sortImports.args": [],
-    "editor.formatOnSave": true,
+    "isort.args":["--profile", "black"],
     "python.testing.pytestArgs": [
         "tests"
     ],
